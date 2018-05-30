@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="horizontal">
+
+    <View
+        android:layout_width="0.1dip"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/tv_no"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        tools:text="123"
+        android:gravity="center"/>
+
+    <View
+        android:layout_width="0.1dip"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/tv_off_time"
+        android:layout_width="0dp"
+        android:textSize="18sp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"/>
+
+    <View
+        android:layout_width="0.1dip"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/tv_on_time"
+        android:layout_width="0dp"
+        android:textSize="18sp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"/>
+
+    <View
+        android:layout_width="0.1dip"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"/>
+</LinearLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:custom="http://schemas.android.com/apk/res-auto"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:fitsSystemWindows="true"
+                  android:orientation="vertical">
+
+        <include layout="@layout/wt_title"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dip"
+                android:layout_marginStart="10dip"
+                android:layout_marginTop="10dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/wt_wifi_switch_space_time"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/wifi_switch_space_time"
+                android:layout_width="0dp"
+                android:layout_height="50dip"
+                android:layout_marginStart="0dip"
+                android:layout_marginTop="10dip"
+                android:layout_weight="1"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dip"
+                android:layout_marginStart="10dip"
+                android:layout_marginTop="10dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/wt_wifi_switch_times"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/wifi_switch_times"
+                android:layout_width="0dp"
+                android:layout_height="50dip"
+                android:layout_marginStart="0dip"
+                android:layout_marginTop="10dip"
+                android:layout_weight="1"
+                android:inputType="number"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/wifi_start"
+                android:layout_width="0dp"
+                android:layout_height="50dip"
+                android:layout_marginStart="10dip"
+                android:layout_marginTop="10dip"
+                android:layout_weight="1"
+                android:text="@string/wt_start_btn"
+                style="@style/ButtonStyleForAutoPhone"/>
+
+            <Button
+                android:id="@+id/wifi_stop"
+                android:layout_width="0dp"
+                android:layout_height="50dip"
+                android:layout_marginStart="10dip"
+                android:layout_marginTop="10dip"
+                android:layout_weight="1"
+                android:text="@string/wt_stop_btn"
+                style="@style/ButtonStyleForAutoPhone"
+                />
+        </LinearLayout>
+
+            <!--<TextView-->
+                <!--android:id="@+id/show_wifi_count"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="30dip"-->
+                <!--android:layout_marginStart="0dip"-->
+                <!--android:layout_marginTop="20dip"-->
+                <!--android:layout_weight="4"-->
+                <!--android:gravity="center"-->
+                <!--android:text="@string/wt_wifi_test_times"-->
+                <!--android:textColor="@color/black"-->
+                <!--/>-->
+
+            <Switch
+                android:id="@+id/wifi_switch_button"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/wt_wifi_test_times"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"/>
+
+        <com.ckt.testauxiliarytool.utils.NumberProgressBar
+            android:id="@+id/number_bar2"
+            style="@style/NumberProgressBar_Default"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:padding="20dp"
+            custom:progress_current="0"/>
+
+        <TextView
+            android:id="@+id/report_message_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dip"
+            android:layout_marginTop="20dip"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.5"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/report_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dip"
+            android:layout_marginTop="20dip"
+            android:lineSpacingMultiplier="1.5"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+</ScrollView>

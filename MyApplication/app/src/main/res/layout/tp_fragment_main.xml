@@ -1,0 +1,41 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ckt.testauxiliarytool.tp.fragments.MainFragment">
+
+    <com.ckt.testauxiliarytool.tp.views.DistanceTouchView
+        android:id="@+id/id_dtv_fragment_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/id_btn_container_fragment_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingBottom="18dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp">
+
+        <com.ckt.testauxiliarytool.tp.views.RecordButton
+            android:id="@+id/id_cbv_record_fragment_main"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <!-- 悬浮按钮 -->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/id_floating_btn_fragment_main"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/tp_ic_intput_size"
+            android:visibility="visible"
+            app:background="@color/color_float_action_button"
+            app:backgroundTint="@color/color_float_action_button"
+            app:elevation="5dp" />
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

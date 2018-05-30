@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ct_background_color_black"
+    >
+
+    <com.ckt.testauxiliarytool.cameratest.common.AutoFitTextureView
+        android:id="@+id/texture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/donot_press_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ct_donot_press_screen"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/ct_color_red"/>
+
+        <TextView
+            android:id="@+id/current_times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ct_color_red"/>
+        <TextView
+            android:id="@+id/current_jpg_resolution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ct_color_red"/>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="23dp"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_start"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ct_radio_dot"
+            android:button="@null"/>
+
+        <RadioButton
+            android:id="@+id/rb_main"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/ct_radio_dot"
+            android:button="@null"
+            android:checked="true"/>
+    </RadioGroup>
+
+</RelativeLayout>

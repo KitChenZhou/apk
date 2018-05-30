@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ckt.testauxiliarytool.sensortest.widget.CompassView
+        android:id="@+id/cv_compass"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/blue_grey_900"
+        android:elevation="8dp"
+        app:keyLineColor="@color/white"
+        app:lineColor="#ECEFF1"
+        app:mAngleSize="10sp"
+        app:mDegreeSize="30sp"
+        app:mLineLength="15dp"
+        app:mTextSize="18sp"
+        app:mainLineColor="@color/white"
+        app:mainLineLength="30dp" />
+
+    <TextView
+        android:id="@+id/tv_accuracy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:elevation="10dp"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/ll_refer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cv_compass"
+        android:layout_margin="5dp"
+        android:elevation="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reference_angle" />
+
+        <TextView
+            android:id="@+id/tv_refer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/max_deviation_angle" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FF9800"
+            android:padding="4dp"
+            android:text="@string/default_angle"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_refer"
+        android:layout_margin="5dp"
+        android:paddingTop="5dp" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="12dp"
+        android:background="@android:drawable/status_bar_item_background"
+        android:src="@drawable/st_ic_save"
+        app:backgroundTint="@color/colorPrimary" />
+
+    <LinearLayout
+        android:id="@+id/ll_calibration"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_calibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:src="@drawable/st_calibrate_animation" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/calibrate_compass"
+            android:textColor="#f00"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

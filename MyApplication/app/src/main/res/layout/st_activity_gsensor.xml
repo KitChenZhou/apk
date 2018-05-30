@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/album_button"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/album_text" />
+
+    <Button
+        android:id="@+id/play_button"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/play_text" />
+
+    <!--<Button-->
+    <!--android:id="@+id/browser_button"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:layout_below="@+id/play_button"-->
+    <!--android:background="@color/shadow_yellow"-->
+    <!--android:layout_marginTop="15dp"-->
+    <!--android:text="@string/browser_text" />-->
+
+</LinearLayout>

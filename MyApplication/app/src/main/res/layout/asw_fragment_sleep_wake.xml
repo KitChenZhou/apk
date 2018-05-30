@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="@string/test_count"/>
+        <EditText
+            android:id="@+id/edt_count"
+            style="@style/EditTextStyle"
+            android:hint="@string/hint_count_text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="@string/test_time"/>
+        <EditText
+            android:id="@+id/edt_time"
+            style="@style/EditTextStyle"
+            android:hint="@string/hint_time_text"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_start"
+        style="@style/ButtonStyleForAutoSleepWake"
+        android:text="@string/btn_start_text"/>
+
+    <Button
+        android:id="@+id/btn_stop"
+        style="@style/ButtonStyleForAutoSleepWake"
+        android:text="@string/btn_stop_text"/>
+
+    <Button
+        android:id="@+id/btn_show_result"
+        style="@style/ButtonStyleForAutoSleepWake"
+        android:text="@string/btn_show_result_text"/>
+
+    <Button
+        android:id="@+id/btn_clear_log"
+        style="@style/ButtonStyleForAutoSleepWake"
+        android:text="@string/btn_clear_log_text"/>
+
+</LinearLayout>

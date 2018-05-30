@@ -1,0 +1,24 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.ckt.testauxiliarytool.tp.fragments.CalcDistanceFragment">
+
+    <com.ckt.testauxiliarytool.tp.views.DistanceTouchView
+        android:id="@+id/id_distance_touch_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- 悬浮按钮 -->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/id_floating_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="25dp"
+        android:src="@mipmap/tp_ic_intput_size"
+        app:backgroundTint="@color/color_light_blue"
+        app:elevation="5dp" />
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/m_sensor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/sensor_m_sensor"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/h_sensor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green_A700"
+            android:text="@string/sensor_h_sensor"
+            android:textAllCaps="false"
+            android:transitionName="hall" />
+
+
+        <Button
+            android:id="@+id/light_sensor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/orange"
+            android:text="@string/sensor_l_sensor"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/p_sensor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/deep_orange_A400"
+            android:text="@string/sensor_p_sensor"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+
+        <Button
+            android:id="@+id/gyroscope"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_A400"
+            android:text="@string/sensor_gyroscope"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/g_sensor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/yellow_A400"
+            android:text="@string/sensor_g_sensor"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</LinearLayout>

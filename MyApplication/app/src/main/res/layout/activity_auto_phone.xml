@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/bing_pic_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ap_background"/>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      xmlns:custom="http://schemas.android.com/apk/res-auto"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      tools:context="com.ckt.testauxiliarytool.numberprogressbar.MainActivity">
+
+            <include layout="@layout/ap_title" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="0dp"
+                    android:layout_height="50dip"
+                    android:layout_marginStart="0dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="1.4"
+                    android:gravity="center"
+                    android:text="@string/ap_phoneNo"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+                <AutoCompleteTextView
+                    android:id="@+id/phone_num"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="0dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="3"
+                    android:hint="@string/ap_input_phoneNo"
+                    android:inputType="number"
+                    android:maxLength="11"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="50dip"
+                    android:layout_marginStart="0dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="1.4"
+                    android:gravity="center"
+                    android:text="@string/ap_space_time"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:id="@+id/wait_time"
+                    android:layout_width="0dp"
+                    android:layout_height="50dip"
+                    android:layout_marginStart="0dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="3"
+                    android:hint="@string/ap_input_space_time"
+                    android:inputType="number"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="50dip"
+                    android:layout_marginStart="0dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="1.4"
+                    android:gravity="center"
+                    android:text="@string/ap_call_duration"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:id="@+id/call_duration_time"
+                    android:layout_width="0dp"
+                    android:layout_height="50dip"
+                    android:layout_marginStart="0dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="3"
+                    android:hint="@string/ap_input_call_duration"
+                    android:inputType="number"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="50dip"
+                    android:layout_marginStart="0dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="1.4"
+                    android:gravity="center"
+                    android:text="@string/ap_call_times"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:id="@+id/call_times"
+                    android:layout_width="0dp"
+                    android:layout_height="50dip"
+                    android:layout_marginStart="0dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="3"
+                    android:hint="@string/ap_input_call_times"
+                    android:inputType="number"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="50dip"
+                    android:layout_marginStart="0dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="1.4"
+                    android:gravity="center"
+                    android:text="@string/ap_sleep_time"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    />
+
+                <Spinner
+                    android:id="@+id/sleep_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="0dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="1.7"
+                    android:entries="@array/ap_sleep_time_choose"
+                    android:hint="@string/ap_input_sleep_time"
+                    android:spinnerMode="dialog"
+                    >
+
+                </Spinner>
+
+                <Button
+                    android:id="@+id/start_sleep_time"
+                    style="@style/ButtonStyleForAutoPhone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3"
+                    android:text="@string/ap_set_sleep_btn"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/startBtn"
+                    style="@style/ButtonStyleForAutoPhone"
+                    android:layout_width="0dp"
+                    android:layout_height="45dip"
+                    android:layout_marginStart="10dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="1"
+                    android:text="@string/ap_start_btn"
+                    />
+
+                <Button
+                    android:id="@+id/stopBtn"
+                    style="@style/ButtonStyleForAutoPhone"
+                    android:layout_width="0dp"
+                    android:layout_height="45dip"
+                    android:layout_marginStart="10dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="1"
+                    android:text="@string/ap_stop_btn"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/show_count"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:layout_marginStart="0dip"
+                android:layout_marginTop="10dip"
+                android:gravity="center"
+                android:text="@string/ap_show_call_times"
+                android:textColor="@color/black"
+
+                />
+
+            <com.ckt.testauxiliarytool.utils.NumberProgressBar
+                android:id="@+id/numberbar1"
+                style="@style/NumberProgressBar_Default"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:padding="20dp"
+                custom:progress_current="0"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/get_reports"
+                    style="@style/ButtonStyleForAutoPhone"
+                    android:layout_width="0dp"
+                    android:layout_height="45dip"
+                    android:layout_marginStart="10dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="1"
+                    android:text="@string/ap_get_reports_btn"
+                    />
+
+                <Button
+                    android:id="@+id/export_file"
+                    style="@style/ButtonStyleForAutoPhone"
+                    android:layout_width="0dp"
+                    android:layout_height="45dip"
+                    android:layout_marginStart="10dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="1"
+                    android:text="@string/ap_export_file_btn"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

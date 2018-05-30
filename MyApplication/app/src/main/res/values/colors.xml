@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TPTest -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_stop_record">#FF2DBC91</color>
+    <color name="red">#cf00</color>
+    <color name="light_red">#af00</color>
+    <color name="white">#ffff</color>
+    <color name="color_float_action_button">#009788</color>
+
+    <color name="blue_grey_900">#263238</color>
+
+    <!--add by cyl for sensortest-->
+    <color name="fail">#F44336</color>
+    <color name="pass">#4CAF50</color>
+
+    <color name="orange">#FF9100</color>
+    <color name="yellow_A400">#FFEA00</color>
+    <color name="deep_orange_A400">#FF3D00</color>
+    <color name="green_A700">#28a745</color>
+    <color name="purple_A400">#D500F9</color>
+    <color name="shadow_purple">#EE7AE9</color>
+
+    <color name="shadow_yellow">#ffffcc</color>
+    <color name="orange_yellow">#FFB90F</color>
+    <!--add by cyl for sensortest-->
+
+    <color name="gray">#bdbdbd</color>
+    <color name="black">#000000</color>
+    <color name="keyTextColor">#424242</color>
+    <color name="green">#00ff00</color>
+    <color name="green_dark">#28a745</color>
+
+    <color name="color_btn_start">#aa009788</color>
+    <color name="color_btn_end">#aa44cc66</color>
+
+    <!--<color name="red">#ff0000</color>-->
+    <color name="color_light_blue">#FF2DBC91</color>
+
+    <!-- AutoSleepWake -->
+    <!--按钮按下时的背景色和文本颜色-->
+    <color name="btn_pressed_back">#DDD</color>
+    <color name="btn_pressed_text">#333</color>
+
+    <!--按钮的文本颜色，分别为按下时和标准状态-->
+    <color name="btn_text_pressed">#333333</color>
+    <color name="btn_text_normal">#FFFFFF</color>
+
+    <!-- BatteryMonitor -->
+    <color name="green_light">#44cc66</color>
+    <color name="green_light_over">#FF2DBC91</color>
+
+    <color name="gray_light">#3999</color>
+    <!-- add by gongpeng.wang for datatest -->
+    <color name="textnormal">#33B5E5</color>
+    <color name="textcolor">#FF707374</color>
+    <!-- end by gongpeng.wang for datatest -->
+
+    <!--camera test start-->
+    <color name="ct_background_color_black">#000000</color>
+    <color name="ct_text_color_white">#FFFFFF</color>
+    <color name="ct_transparency_25">#25FFFFFF</color>
+    <color name="ct_color_red">#FF0000</color>
+    <color name="ct_color_gray">#B8B8B8</color>
+    <color name="ct_task_on">#0e000000</color>
+    <color name="ct_task_not_started">#528b8b</color>
+    <!--camera test end-->
+</resources>

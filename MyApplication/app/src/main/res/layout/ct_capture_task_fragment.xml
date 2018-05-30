@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ckt.testauxiliarytool.cameratest.common.AutoFitTextureView
+        android:id="@+id/ct_capture_fragment_texture_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/ct_capture_fragment_tip"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/ct_color_red"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/ct_capture_fragment_control"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
+
+        <Button
+            android:id="@+id/ct_start_task_cfbc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ct_button_style"
+            android:layout_gravity="left|center_vertical"
+            android:text="@string/ct_capture_task_cfbc_name" />
+        <Button
+            android:id="@+id/ct_start_task_cidb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ct_button_style"
+            android:layout_gravity="center|center_vertical"
+            android:text="@string/ct_capture_task_cidb_name"/>
+        <Button
+            android:id="@+id/ct_start_task_crs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ct_button_style"
+            android:layout_gravity="right|center_vertical"
+            android:text="@string/ct_capture_task_crs_name"/>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/ct_capture_task_radio_group"
+        android:layout_width="23dp"
+        android:layout_height="10dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/ct_capture_task_rb_start"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ct_radio_dot"
+            android:button="@null"/>
+
+        <RadioButton
+            android:id="@+id/ct_capture_task_rb_main"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/ct_radio_dot"
+            android:button="@null"
+            android:checked="true"/>
+    </RadioGroup>
+
+</FrameLayout>

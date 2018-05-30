@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ckt.testauxiliarytool">
+
+    <!-- WiFi权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <!-- 蓝牙权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <!-- 拨打电话权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- 屏幕唤醒 -->
+    <uses-permission
+        android:name="android.permission.DEVICE_POWER"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 录音权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 浮窗权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- 配置接收系统引导完成的权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- 配置唤醒锁的权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- 配置忽略电池优化的权限 -->
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- 重启权限 -->
+    <uses-permission
+        android:name="android.permission.REBOOT"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.BROADCAST_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+
+    <!-- 处理屏幕旋转，布局变动则不太适合 -->
+    <!--   android:configChanges="orientation|keyboardHidden|screenSize"-->
+
+    <!--camera test-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name="com.ckt.testauxiliarytool.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".BaseActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name="com.ckt.testauxiliarytool.FunctionSelectionActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.ckt.testauxiliarytool.tp.TPTestActivity"
+            android:launchMode="singleTask"></activity>
+
+        <service android:name="com.ckt.testauxiliarytool.tp.recorder.ScreenRecordService" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="@string/TP_FILE_PROVIDER_AUTHORITIES"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <!--元数据-->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/tp_file_paths" />
+        </provider>
+
+        <activity
+            android:name=".sensortest.activities.CompassActivity"
+            android:label="@string/mSensor"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sensortest.activities.HallTestActivity"
+            android:label="@string/hSensor"
+            android:screenOrientation="portrait" />
+        <!-- 隐藏掉陀螺仪校准功能 -->
+        <!-- <activity -->
+        <!-- android:name=".activities.gyroscope.GyroscopeActivity" -->
+        <!-- android:label="@string/gyroscope" -->
+        <!-- android:parentActivityName=".activities.TestSelectActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <activity
+            android:name=".sensortest.activities.GyroscopeTestActivity"
+            android:label="@string/response_time"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sensortest.activities.AlbumActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/album_text"
+            android:parentActivityName=".sensortest.activities.GSensorTestActivity" />
+        <activity
+            android:name=".sensortest.activities.PlayerActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/play_text"
+            android:parentActivityName=".sensortest.activities.GSensorTestActivity" />
+        <!-- 隐藏掉浏览器横竖屏切换 -->
+        <!-- <activity -->
+        <!-- android:name=".activities.gSensor.BrowserActivity" -->
+        <!-- android:configChanges="orientation|screenSize" -->
+        <!-- android:label="@string/browser_text" -->
+        <!-- android:parentActivityName=".activities.gSensor.GSensorTestActivity" /> -->
+
+        <activity
+            android:name=".sensortest.activities.GSensorTestActivity"
+            android:label="@string/gsensor_name"
+
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sensortest.activities.LSensorTestActivity"
+            android:label="@string/lSensor"
+
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".sensortest.activities.PSensorTestActivity"
+            android:label="@string/pSensor"
+
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service android:name=".sensortest.service.PSensorTestService" />
+        <service android:name=".sensortest.service.HSensorTestService" />
+
+        <!-- AutoSleepWake -->
+        <activity
+            android:name="com.ckt.testauxiliarytool.autosleepwake.ASWMainActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 配置设备管理广播接收器 -->
+        <receiver
+            android:name="com.ckt.testauxiliarytool.autosleepwake.receiver.AdminReceiver"
+            android:description="@string/app_name"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+
+            <!-- 配置元数据，引用xml资源，配置策略 -->
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/asw_device_admin_configuration" />
+            <!-- 配置意图过滤器，响应动作 -->
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+                <action android:name="android.app.action.DEVICE_ADMIN_DISABLED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 配置休眠唤醒后台服务Service -->
+        <service
+            android:name="com.ckt.testauxiliarytool.autosleepwake.service.SleepWakeService"
+            android:exported="false" />
+
+        <!-- 配置重启测试服务 -->
+        <service
+            android:name="com.ckt.testauxiliarytool.autosleepwake.service.RestartIntentService"
+            android:exported="false" />
+
+        <!-- 配置接收开机完成的广播接收者 -->
+        <receiver android:name="com.ckt.testauxiliarytool.autosleepwake.receiver.BootCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.ckt.testauxiliarytool.autosleepwake.ResultActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".batterymonitor.BatteryMonitorActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <!--配置电池监测服务，仅用于接收电池数据变化的广播-->
+        <service
+            android:name=".batterymonitor.service.BatteryMonitorService"
+            android:exported="false" />
+
+        <!--配置记录数据的服务，用于向Realm数据库中写入相关数据-->
+        <service
+            android:name=".batterymonitor.service.RecordIntentService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.ckt.testauxiliarytool.contentfill.FillToolActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <service
+            android:name="com.ckt.testauxiliarytool.contentfill.RamFillKeepLiveService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <activity
+            android:name="com.ckt.testauxiliarytool.contentfill.FillSmsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SENDTO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+                <data android:scheme="mms" />
+                <data android:scheme="mmsto" />
+            </intent-filter>
+        </activity>
+        <!-- add by gongpeng.wang in 2017-12-01 -->
+        <activity
+            android:name="com.ckt.testauxiliarytool.switchtest.SwitchTestMainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ckt.testauxiliarytool.webviewtest.WebViewTest"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ckt.testauxiliarytool.switchtest.APModeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ckt.testauxiliarytool.switchtest.DataModeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- end by gongpeng.wang in 2017-12-01 -->
+        <receiver
+            android:name="com.ckt.testauxiliarytool.contentfill.MmsReceiver"
+            android:permission="android.permission.BROADCAST_WAP_PUSH">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.WAP_PUSH_DELIVER" />
+
+                <data android:mimeType="application/vnd.wap.mms-message" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.ckt.testauxiliarytool.contentfill.SmsReceiver"
+            android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_DELIVER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.ckt.testauxiliarytool.contentfill.SmsSendService"
+            android:exported="true"
+            android:permission="android.permission.SEND_RESPOND_VIA_MESSAGE">
+
+            <intent-filter>
+                <action android:name="android.intent.action.RESPOND_VIA_MESSAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+                <data android:scheme="mms" />
+                <data android:scheme="mmsto" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.ckt.testauxiliarytool.autophone.AutoPhoneActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name="com.ckt.testauxiliarytool.switchtest.BlueToothActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:name="com.ckt.testauxiliarytool.switchtest.WifiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+
+        <activity
+            android:name="com.ckt.testauxiliarytool.switchtest.CameraActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".switchtest.MoreTestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <!--=============================================================-->
+        <!--camera test start-->
+        <activity
+            android:name=".cameratest.slrc.CameraActivity"
+            android:label="@string/app_name"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/ct_FullscreenTheme" />
+
+        <receiver
+            android:name=".cameratest.slrc.AdminManageReceiver"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/ct_device_admin" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".cameratest.slrc.WakeupReceiver">
+            <intent-filter>
+                <action android:name="com.ckt.testauxiliarytool.cameratest.Wakeup" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".cameratest.fb.StartCameraActivity"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/ct_FullscreenTheme" />
+
+        <!-- 接收开机启动广播 -->
+        <receiver
+            android:name=".cameratest.fb.BootBroadcastReceiver"
+            android:exported="true"
+            android:priority="2147483647">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+
+                <data android:scheme="file" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.REBOOT" />
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"></action>
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".cameratest.fb.LowPowerTakePhoto"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/ct_FullscreenTheme" />
+        <activity
+            android:name=".cameratest.fb.UnusuallyExitCamera"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/ct_FullscreenTheme" />
+        <!--camera test end-->
+        <!--==================================================================-->
+    </application>
+
+</manifest>

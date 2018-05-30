@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/id_open_record_dir_menu"
+        android:title="@string/record_files_manager"
+        app:showAsAction="never" />
+
+    <!--<item-->
+        <!--android:id="@+id/id_start_record_detail"-->
+        <!--android:title="@string/start_record_detail"-->
+        <!--app:showAsAction="never" />-->
+
+    <item
+        android:id="@+id/id_start_distance_detail"
+        android:title="@string/start_distance_detail"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/id_calc_ime_distance"
+        android:title="@string/calc_ime_distance"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/id_start_size_detail"
+        android:title="@string/start_size_detail"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/id_lineation_page"
+        android:title="@string/lineation_page"
+        app:showAsAction="never" />
+
+    <!--<item-->
+        <!--android:id="@+id/id_clear_record_dir_menu_video"-->
+        <!--android:title="@string/clear_record_dir"-->
+        <!--app:showAsAction="never" />-->
+</menu>

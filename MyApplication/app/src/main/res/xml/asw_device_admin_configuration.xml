@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<device-admin xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--使用策略，提示用户激活的原因-->
+    <uses-policies>
+        <!--锁屏-->
+        <force-lock />
+    </uses-policies>
+</device-admin>

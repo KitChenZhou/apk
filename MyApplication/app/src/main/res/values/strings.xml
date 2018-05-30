@@ -1,0 +1,525 @@
+<resources>
+
+    <string name="app_name">TestAuxiliaryTool</string>
+    <string name="autotesttext">Auto Test</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_function_selection">FunctionSelectionActivity</string>
+    <string name="autosleepwake">Auto Sleep Wake</string>
+    <string name="batterymonitor">Battery Monitor</string>
+    <string name="tptest">TP Test</string>
+    <string name="camera_test">Camera Test</string>
+
+    <!-- TPTest -->
+    <string name="tp_module_name">TPTest</string>
+    <string name="start_record">点击开始录屏</string>
+    <string name="stop_record">点击停止录屏</string>
+    <string name="title_record">录屏</string>
+    <string name="titil_allow_perm">权限许可</string>
+    <string name="text_allow_perm">为了能使用录屏功能，请许可以下权限:\n读写权限、录音权限、录屏权限和浮窗权限</string>
+    <string name="ok">好</string>
+    <string name="comfirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="refetch">重新获取</string>
+    <string name="screen_record">录屏</string>
+    <string name="get_size_and_rate">获取尺寸与分辨率</string>
+    <string name="title_size_fragment">尺寸与分辨率</string>
+    <string name="calc_distance">测两指间距</string>
+    <string name="width">widthPixels</string>
+    <string name="height">heightPixels</string>
+    <string name="dpi">dpi</string>
+    <string name="xdpi">xdpi</string>
+    <string name="ydpi">ydpi</string>
+    <string name="density">density</string>
+    <string name="real_width">real_width</string>
+    <string name="real_height">real_height</string>
+    <string name="input_screen_height">请输入屏幕高度(mm)</string>
+    <string name="input_screen_width">请输入屏幕宽度(mm)</string>
+    <string name="record_files_manager">录屏文件管理</string>
+    <string name="clear_record_dir">清理录屏目录</string>
+    <string name="start_record_main">录屏</string>
+    <string name="stop_record_main">停止</string>
+    <string name="start_distance_detail">空白测距页</string>
+    <string name="start_record_detail">录屏详细页</string>
+    <string name="start_size_detail">屏幕尺寸页</string>
+    <string name="calc_ime_distance">输入法测距页</string>
+    <string name="test_imput_ime">测试输入</string>
+    <string name="ime_complete">完成</string>
+    <string name="_00_00_00">00:00:00</string>
+    <string name="record">录屏</string>
+    <string name="titile_calc_distance">空白测距</string>
+    <string name="title_calc_ime_distance">IME测距</string>
+    <string name="all_perms_granted">已经授权所有权限</string>
+    <string name="deny_perms_request_warn">you denied the request,recorder won\'t work</string>
+    <string name="unsupport_screen_record">Android版本小于5.0，暂不支持录屏!</string>
+    <string name="record_time">录屏时间:</string>
+    <string name="input_screen_size">请输入屏幕宽高尺寸</string>
+    <string name="input_success">输入完成</string>
+    <string name="clear_all_videos">是否要清除所有本地录屏视频?</string>
+    <string name="warnings">警告!</string>
+    <string name="try_later">正在录屏，请稍后再试!</string>
+    <string name="clear_videos_failed">清理失败!</string>
+    <string name="clear_videos_successful">清理成功!</string>
+    <string name="stop_recording">停止录屏</string>
+    <string name="notice">注意:实际尺寸仅供参考!</string>
+    <string name="tv_video_name">this is name</string>
+    <string name="tv_video_time">this is time</string>
+    <string name="tv_video_size">this is size</string>
+    <string name="shift_layout">切换布局</string>
+    <string name="lineation_page">划线测试页</string>
+    <string name="no_files">当前无录屏文件</string>
+    <string name="granted_alert_window_perm">浮窗权限许可成功!</string>
+    <string name="denied_alert_window_perm">浮窗权限许可失败,浮窗功能将受影响!</string>
+    <string name="record_audio_permission">录音权限</string>
+    <string name="read_write_permission">读写权限</string>
+    <string name="TP_FILE_PROVIDER_AUTHORITIES">com.ckt.testauxiliarytool.tp.fileprovider</string>
+
+    <string name="sensor_g_sensor">G-Sensor 测试</string>
+    <string name="sensor_gyroscope">Gyroscope 测试</string>
+    <string name="sensor_p_sensor">P-Sensor 测试</string>
+    <string name="sensor_l_sensor">L-Sensor 测试</string>
+    <string name="sensor_h_sensor">Hall-Sensor 测试</string>
+    <string name="sensor_m_sensor">M-Sensor 测试</string>
+
+    <!--M-Sensor test String -->
+    <string name="mSensor">指南针</string>
+    <string name="mSensor_deviation">误差值</string>
+    <string name="accuracy_compass">lv= %d</string>
+    <string name="calibrate_compass">请校准指南针！</string>
+    <string name="calibrate_success">校准成功</string>
+    <string name="max_deviation_angle">最大偏差角度：</string>
+    <string name="reference_angle">参考角度：</string>
+    <string name="default_angle">5°</string>
+    <!--hall Sensor-->
+    <string name="hSensor">霍尔传感器</string>
+    <string name="hSensor_interval">最大响应时间</string>
+    <string name="hSensor_open_interval_tip">最大开盖响应时间(ms)</string>
+    <string name="hSensor_close_interval_tip">最大合盖响应时间(ms)</string>
+    <string name="ap_sure">确定</string>
+
+    <!--菜单栏-->
+    <string name="action_delete">清空数据</string>
+    <string name="action_edit">自定义最大响应时间</string>
+    <string name="action_excel">导出excel表格</string>
+
+    <!--Gravity Sensor-->
+    <string name="gsensor_name">横竖屏切换</string>
+    <string name="album_text">相册横竖屏切换</string>
+    <string name="play_text">播放器横竖屏切换</string>
+    <string name="browser_text">浏览器横竖屏切换</string>
+    <string name="start_text">开始</string>
+    <string name="end_text">结束</string>
+    <string name="save_text">保存到Excel</string>
+    <string name="question">请选择要测试的次数：</string>
+    <string name="browser_go">Go</string>
+
+    <!--Gyroscope-->
+    <string name="gyroscope">陀螺仪</string>
+    <string name="response_time">陀螺仪响应时间</string>
+    <string name="response_x_time">X—轴响应时间</string>
+    <string name="response_y_time">Y—轴响应时间</string>
+    <string name="response_z_time">Z—轴响应时间</string>
+    <string name="forx_button">X轴的响应时间</string>
+    <string name="fory_button">Y轴的响应时间</string>
+    <string name="forz_button">Z轴的响应时间</string>
+    <string name="save_btn">保存数据</string>
+    <string name="for_result_button">获取结果</string>
+    <string name="gyroscope_tips">需要测试的轴（正方向旋转一周360)</string>
+    <string name="gyroscope_check">请选择需要测试的轴</string>
+    <string name="gyroscope_angle">当前已旋转角度：%f</string>
+    <string name="gyroscope_x">X-轴</string>
+    <string name="gyroscope_y">Y-轴</string>
+    <string name="gyroscope_z">Z-轴</string>
+    <string name="gyroscope_end">End</string>
+    <string name="gyroscope_start">Start</string>
+    <string name="lSensor">L-Sensor测试</string>
+    <string name="pSensor">P-Sensor测试</string>
+
+    <!--P-Sensor-->
+    <string name="proximity_str">传感器值：%.1f</string>
+    <string name="btn_start_label">开始测试</string>
+    <string name="btn_stop_label">结束测试</string>
+    <string name="p_table_raw1">次数</string>
+    <string name="p_table_raw2">灭屏时间(ms)</string>
+    <string name="p_table_raw3">亮屏时间(ms)</string>
+    <string name="btn_get_records_label">获取记录</string>
+    <string name="btn_clear_label">清除记录</string>
+    <string name="p_average_time">平均灭屏时间：\n%1$.2fms\n平均亮屏时间：\n%2$.2fms</string>
+    <string name="save_excel_label">导出EXCEL</string>
+
+    <!--L-Sensor-->
+    <string name="show_lux">光照强度：%.1f lx</string>
+    <string name="brightness">当前亮度：%d</string>
+    <string name="l_average_time">平均时间：\n%.3fs</string>
+    <string name="rb_dark_label">暗</string>
+    <string name="rb_light_label">亮</string>
+    <string name="l_table_raw2">测试项</string>
+    <string name="l_table_raw3">光照强度</string>
+    <string name="l_table_raw4">变化范围</string>
+    <string name="l_table_row5">时间</string>
+    <string name="tv_lux_label">光照强度：10 lx</string>
+    <string name="tv_average_label">平均时间：</string>
+    <string name="tv_brightness_label">当前亮度：108</string>
+
+
+    <!-- AutoSleepWake -->
+    <!--休眠唤醒和重启Fragment页面用到的字符串-->
+    <string name="test_count">测试次数：</string>
+    <string name="hint_count_text">请输入测试次数</string>
+    <string name="test_time">时间间隔：</string>
+    <string name="hint_time_text">请输入时间间隔(秒)</string>
+    <string name="btn_start_text">开始测试</string>
+    <string name="btn_stop_text">停止测试</string>
+    <string name="btn_show_result_text">查看日志</string>
+    <string name="btn_clear_log_text">清空日志</string>
+
+    <!--对话框标题-->
+    <string name="dialog_setting_title">提示</string>
+
+    <!--输入错误时对话框信息-->
+    <string name="dialog_input_error_message">时间间隔和测试次数不能为空且测试次数和时间不能为0！</string>
+    <string name="dialog_pos_text">确定</string>
+
+    <!--设置手机睡眠时间对话框提示语和屏幕锁定方式对话框提示语-->
+    <string name="dialog_setting_pos_btn_text">去设置</string>
+    <string name="dialog_setting_neg_btn_text">取消</string>
+    <string name="dialog_setting_neg_btn_text_not">不用啦</string>
+    <string name="dialog_sleep_setting_message">请设置手机休眠(sleep)时间为\n30 minutes，确保测试的正常！</string>
+    <string name="dialog_screen_lock_method_message">为了测试的准确进行，请确保当前手机的屏幕锁定方式(Screen Lock)为无(None)！</string>
+
+    <string name="dialog_restart_is_not_use_message">当前为三方应用，重启功能目前无法实现(权限问题)，敬请关注后期更新！</string>
+
+    <!--Android版本不满足要求时弹出对话框的信息-->
+    <string name="dialog_version_error_message">重启测试要求Android版本至少为7.0！</string>
+    <string name="dialog_delete_log_message">你确定要删除所有日志信息吗？</string>
+
+    <string name="dialog_not_log_show_message">目前没有日志信息，先跑个测试吧！</string>
+
+    <!-- BatteryMonitor -->
+    <string name="btn_text_start_monitor">开启监测服务</string>
+    <string name="btn_text_stop_monitor">停止监测服务</string>
+    <string name="btn_text_look_data">查看历史记录</string>
+    <string name="btn_text_export_excel">导出Excel</string>
+    <string name="btn_text_look_chart">电量消耗曲线</string>
+    <string name="btn_text_clear_data">清空历史记录</string>
+    <!--对话框的标题-->
+    <string name="dialog_title">提示</string>
+    <!--对话框的按钮文本-->
+    <string name="dialog_positive_btn_text">确定</string>
+    <string name="dialog_negative_btn_text">取消</string>
+    <!--没有数据可供显示且监测服务未开启时的对话框消息-->
+    <string name="dialog_not_data_service_is_start_message">当前没有任何的数据，先开启监测服务吧！</string>
+    <!--没有数据可供显示且监测服务已开启时的对话框消息-->
+    <string name="dialog_not_data_service_not_start_message">当前电量数据未变化，请耐心等待数据更新！</string>
+    <!--清空数据时的对话框消息-->
+    <string name="dialog_clear_data_message">确定要清空所有数据吗？</string>
+    <!--导出表格时进度对话框的消息-->
+    <string name="dialog_progress_message">正在导出表格，请耐心等待！</string>
+    <!--ChartFragment页面菜单的选项-->
+    <string name="menu_item_save">保存图表</string>
+    <string name="BatteryMonitorPage">BatteryMonitor</string>
+
+    <string name="contentfill">ContentFill</string>
+    <string name="ram_fill_title">Fill RAM Memory</string>
+    <string name="rom_fill_title">Fill ROM/SDCard Memory</string>
+    <string name="Sms_fill_title">Fill Sms</string>
+    <string name="call_log_fill_title">Fill CallLog</string>
+    <string name="contact_fill_title">Fill Contact</string>
+    <string name="ram_fill_button">RAM填充</string>
+    <string name="rom_fill_button">ROM/SDCard填充</string>
+    <string name="sms_fill_button">短信填充</string>
+    <string name="contact_fill_button">联系人填充</string>
+    <string name="call_log_fill_button">通话记录填充</string>
+    <string name="fill_size_name">大小(M)：</string>
+    <string name="edit_memory_size_name">请输入要填充内存大小(M)</string>
+    <string name="fill_ram">填充RAM</string>
+    <string name="release_ram">释放RAM</string>
+    <string name="update_ram">当前RAM</string>
+    <string name="fill_rom">填充ROM</string>
+    <string name="release_rom">释放ROM</string>
+    <string name="fill_sdcard">填充SDCard</string>
+    <string name="release_sdcard">释放SDCard</string>
+    <string name="edit_sms_size">请输入填充短信的数量</string>
+    <string name="fill_sms">填充短信</string>
+    <string name="release_sms">删除所有短信</string>
+    <string name="calllog_num_edit_text">请输入填充通话记录的数量</string>
+    <string name="calllog_num_text_view">通话记录条数</string>
+    <string name="addcalllog">填充通话记录</string>
+    <string name="deletecalllog">清空通话记录</string>
+    <string name="add_contact_num_edit_text">请输入填充联系人的数量</string>
+    <string name="local_contacts_num_text_view">当前本地联系人数</string>
+    <string name="sim_contacts_num_text_view">当前SIM卡联系人数</string>
+    <string name="add_local_contact">填充到本地</string>
+    <string name="add_sim_contact">填充到SIM卡</string>
+    <string name="delete_local_contact">清空本地联系人</string>
+    <string name="delete_sim_contact">清空SIM卡联系人</string>
+
+    <!-- add for AutoPhone-->
+    <string name="autophone">Auto Phone</string>
+    <string name="ap_phoneNo">电话号码:</string>
+    <string name="ap_input_phoneNo">请输入电话号码</string>
+    <string name="ap_space_time">拨号间隔(s):</string>
+    <string name="ap_input_space_time">请输入拨号间隔时间(s)</string>
+    <string name="ap_call_duration">通话时间(s):</string>
+    <string name="ap_input_call_duration">请输入通话持续时间(s)</string>
+    <string name="ap_input_call_times">请输入拨号的次数</string>
+    <string name="ap_sleep_time">休眠时间(s):</string>
+    <string name="ap_call_times">拨号次数:</string>
+    <string name="ap_input_sleep_time">请输入休眠时间</string>
+    <string name="ap_please_input_correct_para">请输入正确的拨号参数</string>
+    <string name="ap_set_sleep_btn">设置休眠</string>
+    <string name="ap_start_btn">开始</string>
+    <string name="ap_stop_btn">停止</string>
+    <string name="ap_show_call_times">拨打的次数</string>
+    <string name="ap_get_reports_btn">获取报告</string>
+    <string name="ap_export_file_btn">导出EXCEL文件</string>
+    <string name="ap_dont_export_file_go_on_or_not">未导出EXCEL文件，是否继续</string>
+    <string name="ap_is_export_file_to">正在导出EXCEL文件到</string>
+    <string name="ap_export_successfully">成功导出</string>
+    <string name="ap_warning">警告</string>
+    <string name="ap_go_on">继续</string>
+    <string name="ap_cancle_1">取消</string>
+    <string name="ap_sure_1">确认</string>
+    <string name="ap_no_SIM_card">无SIM卡</string>
+    <string name="ap_please_try_again_after_dial_successfully">请拨号完成后再开始</string>
+    <string name="ap_set_duration_time_to_be">已设置休眠时间为：</string>
+    <string name="ap_stop_dial">停止拨号</string>
+    <string name="ap_please_search_information_after_dialing">请拨打电话后查询详细信息</string>
+    <string name="ap_no_report_when_dial_not_service_number">拨打非服务号码时没有报告</string>
+    <string name="ap_please_get_report_firstly">请先获取报告</string>
+    <string name="ap_call_information">通话信息</string>
+    <string name="ap_successful_dial_counts">成功拨打次数： </string>
+    <string name="ap_failure_dial_counts">失败拨打次数： </string>
+    <string name="ap_total_dial_counts">总计拨打次数： </string>
+    <string name="ap_rate_of_dial_successfully">      呼通率      ： </string>
+    <string name="ap_check_test_machine_call_information">请查看测试机的通话记录</string>
+    <string name="ap_stop_dial_already">已停止打电话</string>
+    <string name="ap_No_">第</string>
+    <string name="ap_counts_of_dial">次拨打</string>
+    <string name="ap_tips">提示！</string>
+    <string name="ap_is_exit_app_if_go_on">正在退出程序，是否继续？</string>
+    <string name="ap_if_go_on">，是否继续？</string>
+    <string name="ap_dont_get_report_if_exit_app">未获取报告，是否继续退出程序？</string>
+    <string name="ap_already_get_permission_of_dial">已获取拨打电话权限</string>
+    <string name="ap_already_refuse_permission_of_dial">已拒绝拨打电话权限</string>
+    <string name="ap_already_get_permission_of_export_file">已获取导出文件权限</string>
+    <string name="ap_already_refuse_permission_of_export_file">已拒绝导出文件权限</string>
+    <string name="ap_china_mobile">中国移动:</string>
+    <string name="ap_china_unicom">中国联通:</string>
+    <string name="ap_china_telecom">中国电信:</string>
+    <string name="ap_sim_card_is_unavailable">SIM卡不可用</string>
+
+    <string-array name="ap_sleep_time_choose">
+        <item>15秒</item>
+        <item>30秒</item>
+        <item>1分钟</item>
+        <item>2分钟</item>
+        <item>5分钟</item>
+        <item>10分钟</item>
+        <item>30分钟</item>
+    </string-array>
+    <!-- end for AutoPhone -->
+
+    <!-- add for BlueToothTest-->
+    <string name="btt_bluetooth_test">Bluetooth Test</string>
+    <string name="BT_switch_space_time">时间间隔(s):</string>
+    <string name="BT_switch_times">测试次数:</string>
+
+    <string name="btt_start_btn">开始</string>
+    <string name="btt_stop_btn">停止</string>
+    <string name="btt_enter_correct_parameters">请输入正确的参数！</string>
+    <string name="btt_cant_support_bluetooth">手机不支持蓝牙功能！！</string>
+    <string name="btt_notice">提示!</string>
+    <string name="btt_start_again">正在反复开/关蓝牙压力测试，是否重新开始</string>
+    <string name="btt_confirm">确认</string>
+    <string name="btt_show_restart_test">重新开始蓝牙压力测试</string>
+    <string name="btt_cancle">取消</string>
+    <string name="btt_stop_bluetooth_test">停止蓝牙压力测试</string>
+    <string name="btt_show_not_start_test">未开始蓝牙压力测试</string>
+    <string name="btt_close_bluetooth_first">请先关闭蓝牙状态！</string>
+    <string name="btt_show_times_bluetooth_test">蓝牙测试的次数</string>
+    <string name="btt_report_bluetooth_test">蓝牙测试报告</string>
+    <string name="btt_No_">第</string>
+    <string name="btt_test_times">次测试</string>
+    <string name="btt_successes_times">成功测试次数：</string>
+    <string name="btt_failures_times">失败测试次数：</string>
+    <string name="btt_all_times">总计测试次数：</string>
+    <string name="btt_successes_rate">      成功率      ：</string>
+    <string name="btt_percentage">%</string>
+    <string name="btt_click_twice_quit">再按一次退出BlueTooth Test</string>
+    <!-- end for BlueToothTest -->
+
+    <!-- add for Wi-Fi Test-->
+    <string name="wt_app_name">Wi-Fi Test</string>
+
+    <string name="wt_wifi_switch_space_time">时间间隔(s):</string>
+    <string name="wt_wifi_switch_times">测试次数:</string>
+    <string name="wt_start_btn">开始</string>
+    <string name="wt_stop_btn">停止</string>
+    <string name="wt_wifi_test_times">Wi-Fi测试的次数</string>
+
+    <string name="wt_enter_correct_parameters">请输入正确的参数！</string>
+    <string name="wt_cant_support_bluetooth">手机不支持蓝牙功能！！</string>
+    <string name="wt_notice">提示!</string>
+    <string name="wt_start_again">正在反复开/关Wi-Fi压力测试，是否重新开始</string>
+    <string name="wt_confirm">确认</string>
+    <string name="wt_show_restart_test">重新开始Wi-Fi压力测试</string>
+    <string name="wt_cancle">取消</string>
+    <string name="wt_stop_bluetooth_test">停止Wi-Fi压力测试</string>
+    <string name="wt_show_not_start_test">未开始Wi-Fi压力测试</string>
+    <string name="wt_close_bluetooth_first">请先关闭Wi-Fi状态！</string>
+    <string name="wt_show_times_bluetooth_test">Wi-Fi测试的次数</string>
+    <string name="wt_report_bluetooth_test">Wi-Fi测试报告</string>
+    <string name="wt_No_">第</string>
+    <string name="wt_test_times">次测试</string>
+    <string name="wt_successes_times">成功测试次数：</string>
+    <string name="wt_failures_times">失败测试次数：</string>
+    <string name="wt_all_times">总计测试次数：</string>
+    <string name="wt_successes_rate">成功率      ：</string>
+    <string name="wt_percentage">%</string>
+    <string name="wt_test_finished">测试完成！</string>
+    <string name="wt_exit">再按一次退出Wi-Fi Test</string>
+    <!-- end for Wi-Fi Test -->
+
+    <!-- add for Camera Test-->
+    <string name="ct_app_name">Camera Test</string>
+    <string name="ct_switch_space_time">时间间隔(s):</string>
+    <string name="ct_switch_times">测试次数:</string>
+
+    <string name="ct_start_btn">开始</string>
+    <string name="ct_stop_btn">停止</string>
+    <string name="ct_enter_correct_parameters">请输入正确的参数！</string>
+    <string name="ct_notice">提示!</string>
+    <string name="ct_start_again">正在反复开/关Camera压力测试，是否重新开始</string>
+    <string name="ct_confirm">确认</string>
+    <string name="ct_show_restart_test">重新开始Camera压力测试</string>
+    <string name="ct_cancle">取消</string>
+    <string name="ct_stop_test">已停止Camera压力测试</string>
+    <string name="ct_not_start_test">未开始Camera压力测试</string>
+    <string name="ct_close_bluetooth_first">请先关闭Camera状态！</string>
+    <string name="ct_show_times_test">Camera测试的次数</string>
+    <string name="ct_report_test">Camera测试报告</string>
+    <string name="ct_successes_times">成功测试次数：</string>
+    <string name="ct_failures_times">失败测试次数：</string>
+    <string name="ct_all_times">总计测试次数：</string>
+    <string name="ct_successes_rate">      成功率      ：</string>
+    <string name="ct_percentage">%</string>
+    <string name="ct_stop_test_first">请先停止Camera测试！</string>
+    <string name="ct_completed">已完成</string>
+    <string name="ct_camera_test_times">Camera测试</string>
+    <string name="ct_test_completed">测试已完成！</string>
+    <string name="ct_get_camera_permission">已获取Camera权限</string>
+    <string name="ct_refuse_camera_permission">已拒绝Camera权限</string>
+    <string name="ct_click_twice_quit">再按一次退出Camera Test</string>
+    <!-- end for Camera Test -->
+
+    <!-- by gongpeng.wang in 2017-12-1 -->
+    <string name="web_test">网页打开测试</string>
+    <string name="switchtest">Switch Test</string>
+    <string name="webviewtest">Web Test</string>
+    <string name="ontest">正在测试请稍后</string>
+    <string name="webtest">开始网页测试</string>
+    <string name="datatest">打开WiFi开关</string>
+    <string name="test">输入测试参数</string>
+    <string name="dataon">打开数据开关</string>
+    <string name="dataoff">关闭数据开关</string>
+    <string name="inputurl">请输入网址</string>
+    <string name="inputinter">请输入测试间隔(单位为妙)</string>
+    <string name="inputcount">请输入测试次数</string>
+    <string name="done">确定</string>
+    <string name="ap_cancle">取消</string>
+    <string name="webwarning">请输入有效的网址</string>
+    <string name="web">网页测试</string>
+    <string name="airplane">飞行模式</string>
+    <string name="data">数据开关</string>
+    <string name="report">报告</string>
+    <string name="errorinfo">不具备测试条件请检查</string>
+    <string name="geturl">请输入测试的网址</string>
+    <string name="inter">时间间隔</string>
+    <string name="on">停留时间</string>
+    <string name="second">秒</string>
+    <string name="count">测试次数</string>
+    <string name="delay">超时时间</string>
+    <string name="airplanedialogtitle">正在进行飞行模式开关测试请等待</string>
+    <string name="datadialogtitle">正在进行数据业务开关测试请等待</string>
+    <string name="urldialogtitle">正在进行打开网页测试请等待</string>
+    <string name="plzwaitting">请耐心等待</string>
+    <string name="airplaneison">目前飞行模式处于开启状态</string>
+    <string name="airplaneisoff">目前飞行模式处于关闭状态</string>
+    <string name="dataison">目前数据开关处于开启状态</string>
+    <string name="dataisoff">目前数据开关处于关闭状态</string>
+    <string name="nonet">当前无网络，请连接网络再测试</string>
+    <string name="notnull">输入不能为空</string>
+    <string name="createreport">正在生成报告请稍后...</string>
+    <string name="waringinput">请检查你的输入!!!!</string>
+    <string name="export_excel">Export Excel</string>
+    <string name="start">Start</string>
+    <string name="reporting">正在生成报告请稍后...</string>
+    <string name="aptesttitle">飞行模式开关测试</string>
+    <string name="datatesttitle">数据模式开关测试</string>
+    <string name="airplan_mode_test">飞行模式测试</string>
+    <string name="data_switch_test">数据开关测试</string>
+    <string name="bt_swtich_test">蓝牙开关测试</string>
+    <string name="wifi_switch_test">WiFi开关测试</string>
+    <string name="camera_switch_test">Camera开关测试</string>
+    <string name="more_test">未完待续</string>
+    <!-- end by gongpeng.wang in 2017-12-1 -->
+
+    <!--camera test start-->
+    <string name="ct_capture_task_cfbc_name">前后拍照\n并退出</string>
+    <string name="ct_capture_task_cidb_name">明暗拍照\n并退出</string>
+    <string name="ct_capture_task_crs_name">拍照录像\n切换</string>
+    <string name="ct_capture_task_task_on">执行中</string>
+    <string name="ct_capture_task_task_complete">完成</string>
+    <string name="ct_digits_rule_parameter">0123456789</string>
+    <string name="ct_camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="ct_features">Features</string>
+    <string name="ct_repeat_times">Repeat Times:</string>
+    <string name="ct_switch_camera">Switch Camera</string>
+    <string name="ct_lock_screen">Lock Screen</string>
+    <string name="ct_switch_resolution">Switch Resolution</string>
+    <string name="ct_capture_hdr">Capture in HDR</string>
+    <string name="ct_grant_permission">Please grant all permission!</string>
+    <string name="ct_activity_device">用于“休眠唤醒后启动摄像头”测试！</string>
+    <string name="ct_current_times">当前次数为</string>
+    <string name="ct_current_jpg_resolution">当前照片分辨率为</string>
+    <string name="ct_current_surface_resolution">当前预览分辨率为</string>
+    <string name="ct_current_texture_size">当前TextureView大小为</string>
+    <string name="ct_default_repeat_times">20</string>
+    <string name="ct_reset">Reset</string>
+    <string name="ct_text_cannot_null">输入框中的数据不能为空或0</string>
+    <string name="ct_battery_warning">非低电状态</string>
+    <string name="ct_quit">退出</string>
+    <string name="ct_cancel">取消</string>
+    <string name="ct_quit_dialog_title">请确认是否退出？</string>
+    <string name="ct_quit_dialog_message">注意在Camera进行变化的时候，无法退出！</string>
+    <string name="ct_quit_dialog_message_changing">Camera正在变化，请稍后再按退出!</string>
+    <string name="ct_donot_press_screen">测试过程中，请勿点击屏幕</string>
+    <string name="ct_open_camera_error">使用Camera api2打开摄像头出现错误, 尝试使用api1</string>
+    <string name="ct_can_not_use_hdr">该机型不适用HDR模式！</string>
+    <string name="ct_open_camera_disconnected">与 Camera 的连接被断开了!</string>
+    <string name="ct_grant_device_manager">Please grant device manager!</string>
+    <string name="ct_configuration_map_not_found">%1$s streamConfigurationMap not found!</string>
+    <string name="ct_no_camera">找不到Camera！</string>
+    <string name="ct_dialog_error">Error!</string>
+    <string name="ct_picture_path">照片存储路径：</string>
+    <string name="ct_start_low_power_test">低电开启闪光灯拍照测试开始</string>
+    <string name="ct_taking_photo_message">正在拍照，请稍后再试</string>
+    <string name="ct_flashlight_not_support">该摄像头不支持闪光灯</string>
+    <string name="ct_take_photo_count">拍照计数：</string>
+    <string name="ct_take_photo_done">拍照完成！</string>
+    <string name="ct_start_camera_test_start">启动相机测试开始</string>
+    <string name="ct_cycle_count_down">循环倒计数：</string>
+    <string name="ct_not_root_reboot_by_hand">设备尚未ROOT，请手动关机或重启！</string>
+    <string name="ct_test_is_running">测试任务执行中，不可中断</string>
+    <string name="ct_continue_taking_photo">继续拍照</string>
+    <string name="ct_abnormal_exit_camera_start">异常退出相机测试开始</string>
+    <string name="ct_abnormal_exit_camera_start_pull_the_battery">异常退出相机测试开始，请拔掉电池</string>
+    <string name="ct_abnormal_exit_camera_one_test_done">一次操作已完成， 请拔掉电池进行下一次操作！</string>
+    <string name="ct_abnormal_exit_camera_stopping_taking_photo">拍照已终止, 请拔掉电池进行下一次操作</string>
+    <string name="ct_start_camera_test_done">"启动相机测试完成"</string>
+    <string name="ct_unusually_exit_camera_test_done">"异常退出相机测试完成"</string>
+    <string name="ct_storage_not_available">存储不可用</string>
+    <string name="notice_perms_denied">权限被拒绝，部分功能无法正常使用</string>
+    <string name="new_funtion_waiting">新功能待添加...</string>
+    <!--camera test end-->
+</resources>

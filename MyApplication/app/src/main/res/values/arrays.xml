@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="function_list" translatable="false">
+        <item>@string/autosleepwake</item>
+        <item>@string/batterymonitor</item>
+        <item>@string/tptest</item>
+        <item>@string/sensor_m_sensor</item>
+        <item>@string/sensor_h_sensor</item>
+        <item>@string/sensor_g_sensor</item>
+        <item>@string/sensor_gyroscope</item>
+        <item>@string/sensor_l_sensor</item>
+        <item>@string/sensor_p_sensor</item>
+        <item>@string/contentfill</item>
+        <item>@string/autophone</item>
+        <item>@string/switchtest</item>
+        <item>@string/camera_test</item>
+        <item>@string/webviewtest</item> 
+    </string-array>
+ <!-- add by gongpeng.wang for webtest -->
+    <string-array name="http">
+        <item>https://</item>
+        <item>http://</item>
+    </string-array>
+    <!-- end by gongpeng.wang for webtest -->
+    <!-- add by gongpeng.wang for SwtichTest -->
+    <string-array name="switch_name">
+        <item>@string/airplan_mode_test</item>
+        <item>@string/data_switch_test</item>
+        <item>@string/bt_swtich_test</item>
+        <item>@string/wifi_switch_test</item>
+        <item>@string/camera_switch_test</item>
+        <item>@string/more_test</item>
+    </string-array>
+    <!--Tab标题数组-->
+    <string-array name="tabTitles">
+        <item>休眠唤醒测试</item>
+        <item>重启测试</item>
+    </string-array>
+
+    <!--表格的头，即表格第一行-->
+    <string-array name="headTitles">
+        <item>时间</item>
+        <item>电量</item>
+        <item>温度</item>
+        <item>电压</item>
+        <item>电流</item>
+        <item>充电方式</item>
+        <item>电池状态</item>
+        <item>健康状态</item>
+    </string-array>
+
+    <!--电量的图片ID数组-->
+    <integer-array name="levelIcons">
+        <item>@drawable/level_000</item>
+        <item>@drawable/level_001</item>
+        <item>@drawable/level_002</item>
+        <item>@drawable/level_003</item>
+        <item>@drawable/level_004</item>
+        <item>@drawable/level_005</item>
+        <item>@drawable/level_006</item>
+        <item>@drawable/level_007</item>
+        <item>@drawable/level_008</item>
+        <item>@drawable/level_009</item>
+        <item>@drawable/level_010</item>
+        <item>@drawable/level_011</item>
+        <item>@drawable/level_012</item>
+        <item>@drawable/level_013</item>
+        <item>@drawable/level_014</item>
+        <item>@drawable/level_015</item>
+        <item>@drawable/level_016</item>
+        <item>@drawable/level_017</item>
+        <item>@drawable/level_018</item>
+        <item>@drawable/level_019</item>
+        <item>@drawable/level_020</item>
+        <item>@drawable/level_021</item>
+        <item>@drawable/level_022</item>
+        <item>@drawable/level_023</item>
+        <item>@drawable/level_024</item>
+        <item>@drawable/level_025</item>
+        <item>@drawable/level_026</item>
+        <item>@drawable/level_027</item>
+        <item>@drawable/level_028</item>
+        <item>@drawable/level_029</item>
+        <item>@drawable/level_030</item>
+        <item>@drawable/level_031</item>
+        <item>@drawable/level_032</item>
+        <item>@drawable/level_033</item>
+        <item>@drawable/level_034</item>
+        <item>@drawable/level_035</item>
+        <item>@drawable/level_036</item>
+        <item>@drawable/level_037</item>
+        <item>@drawable/level_038</item>
+        <item>@drawable/level_039</item>
+        <item>@drawable/level_040</item>
+        <item>@drawable/level_041</item>
+        <item>@drawable/level_042</item>
+        <item>@drawable/level_043</item>
+        <item>@drawable/level_044</item>
+        <item>@drawable/level_045</item>
+        <item>@drawable/level_046</item>
+        <item>@drawable/level_047</item>
+        <item>@drawable/level_048</item>
+        <item>@drawable/level_049</item>
+        <item>@drawable/level_050</item>
+        <item>@drawable/level_051</item>
+        <item>@drawable/level_052</item>
+        <item>@drawable/level_053</item>
+        <item>@drawable/level_054</item>
+        <item>@drawable/level_055</item>
+        <item>@drawable/level_056</item>
+        <item>@drawable/level_057</item>
+        <item>@drawable/level_058</item>
+        <item>@drawable/level_059</item>
+        <item>@drawable/level_060</item>
+        <item>@drawable/level_061</item>
+        <item>@drawable/level_062</item>
+        <item>@drawable/level_063</item>
+        <item>@drawable/level_064</item>
+        <item>@drawable/level_065</item>
+        <item>@drawable/level_066</item>
+        <item>@drawable/level_067</item>
+        <item>@drawable/level_068</item>
+        <item>@drawable/level_069</item>
+        <item>@drawable/level_070</item>
+        <item>@drawable/level_071</item>
+        <item>@drawable/level_072</item>
+        <item>@drawable/level_073</item>
+        <item>@drawable/level_074</item>
+        <item>@drawable/level_075</item>
+        <item>@drawable/level_076</item>
+        <item>@drawable/level_077</item>
+        <item>@drawable/level_078</item>
+        <item>@drawable/level_079</item>
+        <item>@drawable/level_080</item>
+        <item>@drawable/level_081</item>
+        <item>@drawable/level_082</item>
+        <item>@drawable/level_083</item>
+        <item>@drawable/level_084</item>
+        <item>@drawable/level_085</item>
+        <item>@drawable/level_086</item>
+        <item>@drawable/level_087</item>
+        <item>@drawable/level_088</item>
+        <item>@drawable/level_089</item>
+        <item>@drawable/level_090</item>
+        <item>@drawable/level_091</item>
+        <item>@drawable/level_092</item>
+        <item>@drawable/level_093</item>
+        <item>@drawable/level_094</item>
+        <item>@drawable/level_095</item>
+        <item>@drawable/level_096</item>
+        <item>@drawable/level_097</item>
+        <item>@drawable/level_098</item>
+        <item>@drawable/level_099</item>
+        <item>@drawable/level_100</item>
+    </integer-array>
+</resources>

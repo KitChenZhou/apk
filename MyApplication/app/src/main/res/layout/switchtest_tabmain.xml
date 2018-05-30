@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <RadioGroup
+        android:id="@+id/tab_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#fffaf4ff"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/air"
+            style="@style/MainTab"
+            android:checked="true"
+            android:drawableTop="@drawable/air_icon"
+            android:gravity="bottom|center_horizontal"
+            android:text="@string/airplane"
+            android:textColor="@drawable/text_selector"/>
+
+        <RadioButton
+            android:id="@+id/data"
+            style="@style/MainTab"
+            android:drawableTop="@drawable/data_icon"
+            android:gravity="bottom|center_horizontal"
+            android:text="@string/data"
+            android:textColor="@drawable/text_selector"/>
+    </RadioGroup>
+</LinearLayout>

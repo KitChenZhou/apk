@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutAnimation="@anim/tp_layout_anim_main"
+    android:orientation="vertical"
+    tools:context="com.ckt.testauxiliarytool.tp.TPTestActivity">
+
+    <!--<com.ckt.test.tp.views.DistanceTouchView-->
+        <!--android:id="@+id/id_dtv_main"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/id_btn_container_main"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:paddingBottom="25dp"-->
+        <!--android:paddingLeft="15dp"-->
+        <!--android:paddingRight="10dp"-->
+        <!--android:paddingTop="15dp">-->
+
+        <!--<com.ckt.test.tp.views.SmallCustomButtonView-->
+            <!--android:id="@+id/id_cbv_record_main"-->
+            <!--android:layout_width="60dp"-->
+            <!--android:layout_height="60dp" />-->
+        <!--&lt;!&ndash; 悬浮按钮 &ndash;&gt;-->
+        <!--<android.support.design.widget.FloatingActionButton-->
+            <!--android:id="@+id/id_floating_btn_main"-->
+            <!--android:layout_width="60dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:src="@mipmap/tp_ic_intput_size"-->
+            <!--app:background="@color/color_float_action_button"-->
+            <!--app:backgroundTint="@color/color_float_action_button"-->
+            <!--app:elevation="5dp" />-->
+    <!--</LinearLayout>-->
+
+    <FrameLayout
+        android:id="@+id/id_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+</RelativeLayout>

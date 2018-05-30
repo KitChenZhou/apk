@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ct_transparency_25"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:background="@drawable/ct_pressed_color"
+            android:contentDescription="@string/ct_reset"
+            android:src="@drawable/ct_reset"/>
+
+        <TextView
+            android:id="@+id/start_title"
+            style="@style/ct_TitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:text="@string/ct_features"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ct_ContentTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ct_repeat_times"
+            />
+
+        <EditText
+            android:id="@+id/repeat_times"
+            android:layout_width="wrap_content"
+            android:minWidth="50dp"
+            android:maxWidth="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/ct_edittext_normal"
+            android:digits="@string/ct_digits_rule_parameter"
+            android:gravity="center_horizontal"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:maxLength="9"
+            android:text="@string/ct_default_repeat_times"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_edit_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/ct_color_red"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+
+        <com.ckt.testauxiliarytool.cameratest.slrc.model.FunctionView
+            android:id="@+id/switch_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/ct_switch_camera"
+            android:src="@drawable/ct_switch_camera"/>
+
+        <com.ckt.testauxiliarytool.cameratest.slrc.model.FunctionView
+            android:id="@+id/lock_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:contentDescription="@string/ct_lock_screen"
+            android:src="@drawable/ct_lock_screen"/>
+
+        <com.ckt.testauxiliarytool.cameratest.slrc.model.FunctionView
+            android:id="@+id/switch_resolution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:contentDescription="@string/ct_switch_resolution"
+            android:src="@drawable/ct_resolution"/>
+
+        <com.ckt.testauxiliarytool.cameratest.slrc.model.FunctionView
+            android:id="@+id/capture_hdr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:contentDescription="@string/ct_capture_hdr"
+            android:src="@drawable/ct_hdr"/>
+
+    </LinearLayout>
+
+    <com.ckt.testauxiliarytool.cameratest.slrc.model.FunctionView
+        android:id="@+id/ct_catpure_task_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/ct_capture_task_icon"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:orientation="horizontal">
+
+        <com.ckt.testauxiliarytool.cameratest.slrc.model.FunctionView
+            android:id="@+id/fb_activity_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ct_action_fb_1"/>
+
+        <com.ckt.testauxiliarytool.cameratest.slrc.model.FunctionView
+            android:id="@+id/fb_activity_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/ct_action_fb_2"/>
+
+        <com.ckt.testauxiliarytool.cameratest.slrc.model.FunctionView
+            android:id="@+id/fb_activity_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/ct_action_fb_3"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
